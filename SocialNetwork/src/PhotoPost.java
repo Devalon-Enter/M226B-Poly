@@ -9,7 +9,7 @@ import java.util.ArrayList;
  */
 
 public class PhotoPost extends Post {
-	
+
 	private String filename;
 	private String caption;
 	

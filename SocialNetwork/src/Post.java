@@ -5,14 +5,14 @@ public class Post{
     private String userName;
     private long timeStamp;
     private int likes;
-    private ArrayList<String> comments;
+    private ArrayList<Comment> comments;
 
 
     public Post(String userName) {
         this.userName = userName;
         this.timeStamp = System.currentTimeMillis();
         this.likes = 0;
-        this.comments = new ArrayList<>();
+        this.comments = new ArrayList<Comment>();
     }
 
 
@@ -26,8 +26,8 @@ public class Post{
         }
     }
 
-    public void addComments(String text) {
-        comments.add(text);
+    public void addComments(Comment comment) {
+        comments.add(comment);
     }
 
     public long getTimeStamp() {
