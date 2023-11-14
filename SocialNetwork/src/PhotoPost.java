@@ -9,7 +9,7 @@ import java.util.ArrayList;
  */
 
 public class PhotoPost extends Post {
-
+	
 	private String filename;
 	private String caption;
 	
@@ -19,8 +19,8 @@ public class PhotoPost extends Post {
 	 * @param filename
 	 * @param caption
 	 */
-	public PhotoPost(String filename, String caption) {
-		super();
+	public PhotoPost(String userName, String filename, String caption) {
+		super(userName);
 		this.filename = filename;
 		this.caption = caption;
 	}

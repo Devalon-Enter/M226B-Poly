@@ -6,11 +6,11 @@ public class Starter {
 		
 		NewsFeed news = new NewsFeed();
 		
-		MessagePost post1 = new MessagePost("Had a great day up in Zermatt!");
+		MessagePost post1 = new MessagePost("John", "Had a great day up in Zermatt!");
 		post1.like();
 		post1.like();
 		
-		news.addMessagePost(post1);
+		news.addPost(post1);
 		news.show();
 		
 

@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 
-public class Post extends NewsFeed{
+public class Post{
 
     private String userName;
     private long timeStamp;
@@ -8,15 +8,11 @@ public class Post extends NewsFeed{
     private ArrayList<String> comments;
 
 
-    public Post() {
-
-    }
-
-    public Post(String userName, int likes, ArrayList<String> comments) {
+    public Post(String userName) {
         this.userName = userName;
         this.timeStamp = System.currentTimeMillis();
-        this.likes = likes;
-        this.comments = comments;
+        this.likes = 0;
+        this.comments = new ArrayList<>();
     }
 
 

@@ -18,8 +18,8 @@ public class MessagePost extends Post {
 	/**
 	 * Constructor for objects of class MessagePost
 	 */
-	public MessagePost(String message) {
-		super();
+	public MessagePost(String message, String userName) {
+		super(userName);
 		this.message = message;
 	}
 

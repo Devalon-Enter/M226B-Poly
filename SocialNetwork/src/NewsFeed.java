@@ -4,46 +4,21 @@ import java.util.ArrayList;
 
 public class NewsFeed {
 
-
-	private ArrayList<MessagePost> messages;
-	private ArrayList<PhotoPost> photos;
-	private ArrayList<EventPost> events;
+	private ArrayList<Post> posts;
 	
 	
 	public NewsFeed() {
-		
-		messages = new ArrayList<>();
-		photos = new ArrayList<>();
-		events = new ArrayList<>();
-	}
-	
-	
-	public void addMessagePost(MessagePost message) {
-		messages.add(message);
-	}
-	
-	public void addPhotoPost(PhotoPost photo) {
-		photos.add(photo);
+		posts = new ArrayList<>();
 	}
 
-	public void addEventPost(EventPost event) {
-		events.add(event);
+	public void addPost(Post post) {
+		posts.add(post);
 	}
 	
 	public void show() {
-		
-		for(MessagePost message : messages) {
-			message.display();
-			System.out.println();
-		}
-		
-		for(PhotoPost photo : photos) {
-			photo.display();
-			System.out.println();
-		}
 
-		for(EventPost event : events) {
-			event.display();
+		for(Post post : posts) {
+			post.display();
 			System.out.println();
 		}
 		
