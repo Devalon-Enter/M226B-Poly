@@ -3,8 +3,8 @@ import jdk.jfr.Event;
 import java.util.ArrayList;
 
 public class NewsFeed {
-	
-	
+
+
 	private ArrayList<MessagePost> messages;
 	private ArrayList<PhotoPost> photos;
 	private ArrayList<EventPost> events;
